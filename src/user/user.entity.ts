@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Document } from '../document/document.entity';
 
 @Entity()
 export class User {
@@ -13,4 +14,7 @@ export class User {
 
   @Column()
   public password: string;
+
+  @OneToMany(() => Document, (document: Document) => document.author)
+  public documents: Document[];
 }

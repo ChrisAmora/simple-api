@@ -49,6 +49,7 @@ describe('The AuthenticationService', () => {
               id: '5',
               email: 'test@gmail.com',
               fullName: 'test',
+              documents: null,
               password: hashedPassword,
             }),
         });
@@ -68,6 +69,7 @@ describe('The AuthenticationService', () => {
               id: '5',
               email: 'test@gmail.com',
               fullName: 'test',
+              documents: null,
               password: 'hashed',
             }),
         });

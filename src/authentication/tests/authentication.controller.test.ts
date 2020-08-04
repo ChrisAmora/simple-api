@@ -11,9 +11,9 @@ describe('The AuthenticationController', () => {
     describe('if the email is not taken', () => {
       it('response should have the Set-Cookie header with the Authorization token', () => {
         const userData: CreateUserDto = {
-          fullName: 'John Smith',
-          email: 'john@smith.com',
-          password: 'strongPassword123',
+          fullName: 'testlino',
+          email: 'test@gmail.com',
+          password: '1234',
         };
         process.env.JWT_SECRET = 'jwt_secret';
         (typeorm as any).getRepository.mockReturnValue({

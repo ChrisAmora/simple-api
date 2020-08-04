@@ -2,6 +2,8 @@
 
 ## You'll need Node.js v14.7.0 and Docker
 
+## tested on macOS
+
 ### first, create a .env file with content from .env.sample
 
 ## endpoints

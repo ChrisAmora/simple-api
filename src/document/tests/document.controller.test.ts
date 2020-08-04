@@ -3,7 +3,7 @@ import * as typeorm from 'typeorm';
 import { App } from '../../app';
 import { DocumentController } from '../../document/document.controller';
 import { CreateDocumentDto } from '../../document/document.dto';
-import { AuthenticationTokenMissingException } from '../../exceptions/AuthenticationTokenMissingException';
+import { AuthenticationTokenMissingException } from '../../exceptions/authentication-token-missing.exception';
 import { authMiddleware } from '../../middleware/auth.middleware';
 import { User } from '../../user/user.entity';
 import { mockRequest } from '../../utils/test.utils';

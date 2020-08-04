@@ -1,8 +1,8 @@
 import { NextFunction, Response } from 'express';
 import * as jwt from 'jsonwebtoken';
 import { getRepository } from 'typeorm';
-import { AuthenticationTokenMissingException } from '../exceptions/AuthenticationTokenMissingException';
-import { WrongAuthenticationTokenException } from '../exceptions/WrongAuthenticationTokenException';
+import { AuthenticationTokenMissingException } from '../exceptions/authentication-token-missing.exception';
+import { WrongAuthenticationTokenException } from '../exceptions/wrong-authentication-token.exception';
 import { DataStoredInToken } from '../interfaces/dataStoredInToken';
 import { RequestWithUser } from '../interfaces/requestWithUser.interface';
 import { User } from '../user/user.entity';

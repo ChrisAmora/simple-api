@@ -2,8 +2,8 @@ import { hash } from 'bcrypt';
 import * as typeorm from 'typeorm';
 import { User } from 'user/user.entity';
 import { AuthenticationService } from '../../authentication/authentication.service';
-import { UserWithThatEmailAlreadyExistsException } from '../../exceptions/UserWithThatEmailAlreadyExistsException';
-import { WrongCredentialsException } from '../../exceptions/WrongCredentialsException';
+import { UserWithThatEmailAlreadyExistsException } from '../../exceptions/email-already-exists.exception';
+import { WrongCredentialsException } from '../../exceptions/wrong-credentials.exception';
 import { TokenData } from '../../interfaces/tokenData.interface';
 import { CreateUserDto, LoginUserDto } from '../../user/user.dto';
 

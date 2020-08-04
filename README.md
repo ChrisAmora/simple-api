@@ -23,6 +23,9 @@ email: string;
 
 ### /documents
 
+with auth cookie ex:
+Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNTk2NTQ1MzUyLCJleHAiOjE1OTY1NDg5NTJ9.1kpdh9qWkkCsBvv8RVnuOCFIRSiZcN57rQaTbbczCu0; Path=/; Domain=localhost; Expires=Wed, 04 Aug 2021 12:47:14 GMT;
+
 birthdate: string;
 
 cpf: string;

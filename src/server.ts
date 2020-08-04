@@ -2,6 +2,7 @@ import 'dotenv/config';
 import 'reflect-metadata';
 import { createConnection } from 'typeorm';
 import { App } from './app';
+import { AuthenticationController } from './authentication/authentication.controller';
 import * as config from './ormconfig';
 
 (async () => {
@@ -12,6 +13,6 @@ import * as config from './ormconfig';
     console.log('Error connecting to the database', error);
     return error;
   }
-  const app = new App([]);
+  const app = new App([new AuthenticationController()]);
   app.listen();
 })();

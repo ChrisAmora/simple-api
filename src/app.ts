@@ -2,6 +2,7 @@ import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
 import { Controller } from './interfaces/controller.interface';
+import { errorMiddleware } from './middleware/error.middleware';
 
 export class App {
   private app: express.Application;
@@ -29,7 +30,9 @@ export class App {
     this.app.use(cookieParser());
   }
 
-  private initializeErrorHandling() {}
+  private initializeErrorHandling() {
+    this.app.use(errorMiddleware);
+  }
 
   private initializeControllers(controllers: Controller[]) {
     controllers.forEach((controller) => {
